@@ -1,0 +1,56 @@
+{
+    "configurations": [
+        {
+            "type": "java",
+            "name": "Spring Boot-NetflixEurekaServerApplication<Netflix-Eureka-Server>",
+            "request": "launch",
+            "cwd": "${workspaceFolder}",
+            "mainClass": "com.deloitte.fi.weather.NetflixEurekaServerApplication",
+            "projectName": "Netflix-Eureka-Server",
+            "args": "",
+            "envFile": "${workspaceFolder}/.env",
+            "vmArgs": " -Dcom.sun.management.jmxremote -Dcom.sun.management.jmxremote.port=57378 -Dcom.sun.management.jmxremote.authenticate=false -Dcom.sun.management.jmxremote.ssl=false -Dspring.jmx.enabled=true -Djava.rmi.server.hostname=localhost -Dspring.application.admin.enabled=true -Dspring.boot.project.name=Netflix-Eureka-Server"
+        },
+        {
+            "type": "java",
+            "name": "Spring Boot-WeatherServiceApplication<weather-service>",
+            "request": "launch",
+            "cwd": "${workspaceFolder}",
+            "mainClass": "com.deloitte.fi.weather.WeatherServiceApplication",
+            "projectName": "weather-service",
+            "args": "",
+            "envFile": "${workspaceFolder}/.env",
+            "vmArgs": " -Dcom.sun.management.jmxremote -Dcom.sun.management.jmxremote.port=57463 -Dcom.sun.management.jmxremote.authenticate=false -Dcom.sun.management.jmxremote.ssl=false -Dspring.jmx.enabled=true -Djava.rmi.server.hostname=localhost -Dspring.application.admin.enabled=true -Dspring.boot.project.name=weather-service"
+        },
+        {
+            "type": "java",
+            "name": "Spring Boot-ApiGatewayApplication<APIGateway>",
+            "request": "launch",
+            "cwd": "${workspaceFolder}",
+            "mainClass": "com.deloitte.fi.weather.APIGateway.ApiGatewayApplication",
+            "projectName": "APIGateway",
+            "args": "",
+            "envFile": "${workspaceFolder}/.env"
+        },
+        {
+            "type": "java",
+            "name": "Spring Boot-WeatherForecastApplication<weather-forecast>",
+            "request": "launch",
+            "cwd": "${workspaceFolder}",
+            "mainClass": "com.deloitte.fi.forecast.WeatherForecastApplication",
+            "projectName": "weather-forecast",
+            "args": "",
+            "envFile": "${workspaceFolder}/.env"
+        },
+        {
+            "type": "java",
+            "name": "Spring Boot-WeatherDetailsInsertApplication<weather-details-insert>",
+            "request": "launch",
+            "cwd": "${workspaceFolder}",
+            "mainClass": "com.deloitte.fi.details.WeatherDetailsInsertApplication",
+            "projectName": "weather-details-insert",
+            "args": "",
+            "envFile": "${workspaceFolder}/.env"
+        }
+    ]
+}
